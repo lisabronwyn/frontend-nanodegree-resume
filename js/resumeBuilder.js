@@ -176,15 +176,16 @@ education.display = function() {
 			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
 			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
 			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
-			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
-			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
-			var formattedSchoolMinor = HTMLschoolMinor.replace("%data%", education.schools[i].minor);
+			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[i].location);
+			// var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
+			// var formattedSchoolMinor = HTMLschoolMinor.replace("%data%", education.schools[i].minor);
 
 			$(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
 			$(".education-entry:last").append(formattedSchoolDates);
 			$(".education-entry:last").append(formattedSchoolLocation);
-			$(".education-entry:last").append(formattedSchoolMajor);
-			$(".education-entry:last").append(formattedSchoolMinor);
+
+			// $(".education-entry:last").append(formattedSchoolMajor);
+			// $(".education-entry:last").append(formattedSchoolMinor);
 		}
 
 		if(education.onlineCourses.length > 0) {
@@ -271,4 +272,4 @@ $(function () {
 });
 
 // $("#main").append(internationalizeButton);
-$("#mapDiv").append(googleMap);
+// $("#mapDiv").append(googleMap);
