@@ -19,20 +19,21 @@ h1 {
     display: inline;
 }
 
-h2 {
+h2, h3.oc {
     font-weight: bold;
     font-size: 24px;
     color: #999;
     line-height: 29px;
     padding: 10px;
+    text-align: left;
 }
 
-h3 {
+/*h3 {
     font-style: italic;
     font-size: 20px;
     color: #000;
     line-height: 22px;
-}
+}*/
 
 h4 {
     font-weight: bold;
